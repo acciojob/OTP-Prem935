@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+.heading {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+.code-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.code {
+    font-size: 2rem;
+    width: 5rem;
+    height: 6rem;
+    margin: 0.25rem;
+    text-align: center;
+}
+
+.code:focus {
+    outline: 2px solid #007bff;
+    border-color: #007bff;
+}
