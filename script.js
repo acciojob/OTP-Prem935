@@ -5,6 +5,7 @@ const codeContainer = document.querySelector('.code-container');
 function createOtpInputs(count) {
   for (let i=0;i<count;i++) {
     const input = document.createElement('input');
+	input.id = `code-${i+1}`;
     input.className = 'code';
     input.type = 'text';
     input.inputMode = 'numeric';
@@ -45,3 +46,7 @@ function handleKeyDown(e) {
 }
 
 createOtpInputs(otp_length);
+const firstInput = codeContainer.querySelector('input');
+if (firstInput) {
+  firstInput.focus();
+}
